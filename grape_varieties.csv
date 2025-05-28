@@ -1,0 +1,5 @@
+name,synonyms,image_path,description,regions,flavor_profile,food_pairings,color
+Cabernet Sauvignon,Cab Sauv,images/cabernet_sauvignon.jpg,A full-bodied red grape known for blackcurrant flavor and firm tannins.,Bordeaux; Napa Valley,Blackcurrant; Cedar; Bell Pepper,Grilled steak; Lamb; Hard cheeses,Red
+Chardonnay,,images/chardonnay.jpg,A popular white grape known for its wide range of styles from crisp to buttery.,Burgundy; Sonoma; Yarra Valley,Apple; Citrus; Vanilla,Seafood; Chicken; Creamy pasta,White
+Pinot Noir,,images/pinot_noir.jpg,"A delicate red grape known for its light body and earthy, cherry flavors.",Burgundy; Oregon; Central Otago,Cherry; Earth; Mushroom,Duck; Pork; Brie,Red
+Blaufränkisch,Lemberger,images/blaufraenkisch.jpg, Rich black fruit is contrasted by peppery flavors and boisterous acidity in this food-friendly Austrian red. Blaufränkisch is a parent grape of both Gamay and Zweigelt.,Austria, Blackberry Bramble; Black Cherry; Dark Chocolate; Allspice Pepper, smoked sausage; red potato goulash; cheesy spaetzle dumplings,Red
