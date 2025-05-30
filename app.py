@@ -44,6 +44,21 @@ if selected_region != "All":
 if selected_color != "All":
     filtered_df = filtered_df[filtered_df['color'] == selected_color]
 
+# # # some statistic add-ons for the sidebar # # #
+# Title
+st.sidebar.markdown("---")
+st.sidebar.header("📊 Grapebase Stats")
+
+# Total entries
+total_count = len(df)
+st.sidebar.markdown(f"**Total entries:** {total_count}")
+
+# Grape color distribution
+color_counts = df['color'].value_counts()
+# Display the distribution of grape colors in the sidebar
+for color, count in color_counts.items():
+    st.sidebar.markdown(f"**{color}:** {count}")
+
 # # # Display results # # # 
 
 if not filtered_df.empty:
@@ -58,17 +73,3 @@ if not filtered_df.empty:
         st.markdown("---")
 else:
     st.warning("No results found. Try adjusting your search or filters.")
-
-# # # some stistic addd ons for the sidebar # # #
-# Title
-st.sidebar.markdown("---")
-st.sidebar.header("📊 Grapebase Stats")
-
-# Total entries
-total_count = len(df)
-st.sidebar.markdown(f"**Total entries:** {total_count}")
-
-# Grape color distribution
-color_counts = df['color'].value_counts()
-for color, count in color_counts.items():
-    st.sidebar.markdown(f"**{color}:** {count}")
