@@ -27,6 +27,7 @@ selected_color = st.sidebar.selectbox("Select Grape Color", options=["All"] + co
 # # # Apply filters # # # 
 filtered_df = df.copy()
 
+
 # Text search
 if search_term:
     search_term_lower = search_term.lower()
@@ -59,10 +60,11 @@ color_counts = df['color'].value_counts()
 for color, count in color_counts.items():
     st.sidebar.markdown(f"**{color}:** {count}")
 
+
 # # # Display results # # # 
 
 if not filtered_df.empty:
-    for _, row in filtered_df.iterrows():
+    for _, row in filtered_df.sort_values('name').iterrows():
         st.subheader(row['name'])
         image = Image.open(row['image_path'])
         st.image(image, caption=row['name'], width=300)
